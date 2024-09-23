@@ -57,3 +57,21 @@ func getDivisorSum(number: Int) -> Int {
     
     return divisorSum
 }
+
+func main() -> String {
+    let number = getInput(minimum: 1, maximum: 32500)
+    
+    let divisorSum = getDivisorSum(number: number)
+    
+    var result = ""
+    
+    if divisorSum == number {
+        result = "\(number) is a perfect number"
+    } else if divisorSum <= number {
+        result = "\(number) is a deficient number"
+    } else if divisorSum >= number {
+        result = "\(number) is an abundant number"
+    }
+    
+    return result
+}
