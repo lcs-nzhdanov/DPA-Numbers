@@ -43,3 +43,17 @@ func getInput(minimum: Int?, maximum: Int?) -> Int {
     
     
 }
+
+func isDivisor(dividend: Int, divisor: Int) -> Bool {
+    return divisor % dividend == 0 ? true : false
+}
+
+func getDivisorSum(number: Int) -> Int {
+    var divisorSum = 0
+    
+    for i in 1...(number/2) {
+        isDivisor(dividend: number, divisor: i) ? divisorSum += i : nil
+    }
+    
+    return divisorSum
+}
