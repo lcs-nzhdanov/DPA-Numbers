@@ -20,18 +20,44 @@
 
 /* Begin PBXFileReference section */
 		825153852CA1BFA500F65E89 /* DPA Numbers */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "DPA Numbers"; sourceTree = BUILT_PRODUCTS_DIR; };
+		825153972CA1C5AC00F65E89 /* DPANumbersTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DPANumbersTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8251539F2CA1C5B700F65E89 /* Exceptions for "DPA Numbers" folder in "DPANumbersTest" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				main.swift,
+			);
+			target = 825153962CA1C5AC00F65E89 /* DPANumbersTest */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		825153872CA1BFA500F65E89 /* DPA Numbers */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8251539F2CA1C5B700F65E89 /* Exceptions for "DPA Numbers" folder in "DPANumbersTest" target */,
+			);
 			path = "DPA Numbers";
+			sourceTree = "<group>";
+		};
+		825153982CA1C5AC00F65E89 /* DPANumbersTest */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DPANumbersTest;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		825153822CA1BFA500F65E89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		825153942CA1C5AC00F65E89 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				825153872CA1BFA500F65E89 /* DPA Numbers */,
+				825153982CA1C5AC00F65E89 /* DPANumbersTest */,
 				825153862CA1BFA500F65E89 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				825153852CA1BFA500F65E89 /* DPA Numbers */,
+				825153972CA1C5AC00F65E89 /* DPANumbersTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +110,28 @@
 			productReference = 825153852CA1BFA500F65E89 /* DPA Numbers */;
 			productType = "com.apple.product-type.tool";
 		};
+		825153962CA1C5AC00F65E89 /* DPANumbersTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8251539B2CA1C5AC00F65E89 /* Build configuration list for PBXNativeTarget "DPANumbersTest" */;
+			buildPhases = (
+				825153932CA1C5AC00F65E89 /* Sources */,
+				825153942CA1C5AC00F65E89 /* Frameworks */,
+				825153952CA1C5AC00F65E89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				825153982CA1C5AC00F65E89 /* DPANumbersTest */,
+			);
+			name = DPANumbersTest;
+			packageProductDependencies = (
+			);
+			productName = DPANumbersTest;
+			productReference = 825153972CA1C5AC00F65E89 /* DPANumbersTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +143,9 @@
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					825153842CA1BFA500F65E89 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					825153962CA1C5AC00F65E89 = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
@@ -112,12 +165,30 @@
 			projectRoot = "";
 			targets = (
 				825153842CA1BFA500F65E89 /* DPA Numbers */,
+				825153962CA1C5AC00F65E89 /* DPANumbersTest */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		825153952CA1C5AC00F65E89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		825153812CA1BFA500F65E89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		825153932CA1C5AC00F65E89 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -263,6 +334,34 @@
 			};
 			name = Release;
 		};
+		8251539C2CA1C5AC00F65E89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.nikitazhdanov.DPANumbersTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8251539D2CA1C5AC00F65E89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.nikitazhdanov.DPANumbersTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -280,6 +379,15 @@
 			buildConfigurations = (
 				8251538D2CA1BFA500F65E89 /* Debug */,
 				8251538E2CA1BFA500F65E89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8251539B2CA1C5AC00F65E89 /* Build configuration list for PBXNativeTarget "DPANumbersTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8251539C2CA1C5AC00F65E89 /* Debug */,
+				8251539D2CA1C5AC00F65E89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
