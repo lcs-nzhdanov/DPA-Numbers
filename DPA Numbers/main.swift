@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Receiving an input
 func getInput(minimum: Int?, maximum: Int?) -> Int {
     while true {
         
@@ -41,10 +42,12 @@ func getInput(minimum: Int?, maximum: Int?) -> Int {
     
 }
 
+// Function to check if number is a divisor
 func isDivisor(dividend: Int, divisor: Int) -> Bool {
     return dividend % divisor == 0 ? true : false
 }
 
+// Function to get the sum of Divisors
 func getDivisorSum(number: Int) -> Int {
     var divisorSum = 0
     
