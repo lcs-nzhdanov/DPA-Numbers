@@ -7,9 +7,6 @@
 
 import Foundation
 
-print("Hello, World!")
-
-
 func getInput(minimum: Int?, maximum: Int?) -> Int {
     while true {
         
@@ -45,7 +42,7 @@ func getInput(minimum: Int?, maximum: Int?) -> Int {
 }
 
 func isDivisor(dividend: Int, divisor: Int) -> Bool {
-    return divisor % dividend == 0 ? true : false
+    return dividend % divisor == 0 ? true : false
 }
 
 func getDivisorSum(number: Int) -> Int {
@@ -53,6 +50,8 @@ func getDivisorSum(number: Int) -> Int {
     
     for i in 1...(number/2) {
         isDivisor(dividend: number, divisor: i) ? divisorSum += i : nil
+        
+        print(i, isDivisor(dividend: number, divisor: i), divisorSum)
     }
     
     return divisorSum
@@ -74,4 +73,8 @@ func main() -> String {
     }
     
     return result
+}
+
+while true {
+    print(main())
 }
