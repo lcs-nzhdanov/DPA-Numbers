@@ -9,3 +9,37 @@ import Foundation
 
 print("Hello, World!")
 
+
+func getInput(minimum: Int?, maximum: Int?) -> Int {
+    while true {
+        
+        // Read input
+        guard let givenInput = readLine() else {
+            continue
+        }
+        
+        // Check if number is Int
+        guard let givenInteger = Int(givenInput) else {
+            continue
+        }
+        
+        // Compare with lowest limit
+        if let minimumValue = minimum {
+            guard givenInteger >= minimumValue else {
+                continue
+            }
+        }
+        
+        // Compare with highest limit
+        if let maximumValue = maximum {
+            guard givenInteger <= maximumValue else {
+                continue
+            }
+        }
+        
+        // Return input
+        return givenInteger
+    }
+    
+    
+}
